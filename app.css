@@ -1,0 +1,95 @@
+body {
+    background-image: url('backdrop.jpg');
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main {
+    width: min-content;
+    height: 54vh;
+    margin: 23vh auto;
+    background-color: #000000cc;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black inset;
+    font-size: 72px;
+}
+
+.title {
+    color: white;
+    white-space: nowrap;
+    padding: 32px 24px 0;
+}
+
+.countdown {
+    position: relative;
+}
+
+.countdown span {
+    color: #ed2626;
+    font-size: 312px;
+    white-space: nowrap;
+    display: flex;
+}
+
+.minutes {
+    position: absolute;
+    top: 0;
+    right: 66px;
+}
+
+.seconds {
+    position: absolute;
+    top: 0;
+    left: 66px;
+}
+
+.override {
+    color: white;
+    white-space: nowrap;
+    padding-bottom: 32px;
+    width: 60%;
+    display: flex;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    height: 81.33px;
+    white-space: nowrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: min-content;
+    cursor: pointer;
+    caret-color: transparent;
+    overflow-y: hidden;
+}
+
+.fake {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    height: 81.33px;
+    white-space: nowrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    overflow-y: hidden;
+    width: 1000px;
+}
+
+.hidden {
+    display: none;
+}
+
+.failure {
+    color: #ed2626;
+}
+
+.success {
+    color: green;
+}

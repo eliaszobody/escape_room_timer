@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div id="fakemain" class="main" style="justify-content: center;">
+        <div class="override">
+            Passkey:&nbsp;<span class="fake" role="text" contenteditable autofocus></span>
+        </div>
+    </div>
+    <div id="truemain" class="main hidden">
+        <span class="title" id="title">THE TREASURE WILL SELF-DESTRUCT IN</span>
+        <div class="countdown" id="countdown">
+            <span class="minutes" id="minutes">45</span>
+            <span class="colon">:</span>
+            <span class="seconds" id="seconds">00</span>
+        </div>
+        <div class="override">
+            Override:&nbsp;<span class="input" role="text" id="input" contenteditable autofocus></span>
+            <span id="blinker"></span>
+            <span id="failure" class="failure hidden">Failed!</span>
+            <span id="success" class="success hidden">Success!</span>
+        </div>
+    </div>
+</body>
+<script src=" script.js"></script>
+
+</html>
