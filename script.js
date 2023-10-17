@@ -15,16 +15,22 @@ const fakemain = document.getElementById('fakemain');
 
 
 
-if (fake === true) {
-    document.addEventListener("keydown", function (event) {
-        if (event.key === 'Enter') {
+document.addEventListener("keydown", function (event) {
+    if (event.key === 'Enter') {
+        if (fake === true) {
             fakemain.classList.add('hidden');
             truemain.classList.remove('hidden');
             fake = false;
             return run();
+        } else {
+            event.preventDefault();
+            if (input.innerHTML.trim() === 'nineteen') {
+                finished = true;
+            }
+            input.innerHTML = '';
         }
-    })
-}
+    }
+})
 
 function run() {
     input.focus();
@@ -35,16 +41,6 @@ function run() {
     document.addEventListener('click', function () {
         input.focus();
     })
-
-    document.addEventListener("keydown", function (event) {
-        if (event.key === 'Enter') {
-            event.preventDefault();
-            if (input.innerHTML.trim() === 'nineteen') {
-                finished = true;
-            }
-            input.innerHTML = '';
-        }
-    });
 
     function update() {
         if (time > 0 && finished === false) {
