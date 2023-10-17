@@ -20,7 +20,7 @@ if (fake === true) {
         if (event.key === 'Enter') {
             fakemain.classList.add('hidden');
             truemain.classList.remove('hidden');
-            fake === false;
+            fake = false;
             return run();
         }
     })
